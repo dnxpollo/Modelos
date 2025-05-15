@@ -1,0 +1,56 @@
+/* importando uma fonte para o arquivo */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+
+/* criando uma varial que contem uma cor */
+:root {
+    --primary-color:rgb(82, 141, 180);
+    --primay-color-darker:rgb(19, 74, 110);
+}
+
+* {
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background: var(--primary-color); /* usando a variável criada */
+    font-family: "Zilla Slab", serif; /* uso da fonte importada */
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+max-width: 640px;
+margin: 50px auto;
+background: white;
+padding: 20px;
+border-radius: 20px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    height: 40px;
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    cursor: pointer;
+    border: none;
+    background: var(--primary-color);
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: 700;
+    height: 50px;
+}
+
+form button:hover {
+    background: var(--primay-color-darker);
+}
+
